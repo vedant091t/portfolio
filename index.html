@@ -599,21 +599,26 @@
             </div>
             
             <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+                <form action="https://formsubmit.co/vedanttandel1089@gmail.com" method="POST">
+    <div class="form-group">
+        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+    </div>
+
+    <!-- ✅ Hidden inputs to disable captcha and set redirect -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="thankyou.html"> <!-- Redirect to thankyou.html -->
+
+    <button type="submit" class="btn">Send Message</button>
+    </form>
             </div>
         </div>
     </section>
